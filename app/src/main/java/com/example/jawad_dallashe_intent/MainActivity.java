@@ -1,6 +1,9 @@
 package com.example.jawad_dallashe_intent;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +12,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-
+    Button plus,sub,multiplication,division,equal,delete,credits;
+    String operator,str;
+    int check,count;
+    EditText screen_display;
+    TextView title;
+    float num,result;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
